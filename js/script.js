@@ -39,6 +39,9 @@ let filmsItems = filmsList.querySelectorAll('.promo__interactive-item');
 
 movieDB.movies.sort();
 
-[...filmsItems].forEach((item, i) => {
-  item.textContent = `${i + 1}. ${movieDB.movies[i]}`;
+filmsItems.forEach((item, i) => {
+  filmsItems.innerHTML +=
+  `<li class="promo__interactive-item">${i + 1}. ${movieDB.movies[i]}
+      <div class="delete"></div>
+  </li>`;
 });
