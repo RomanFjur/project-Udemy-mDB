@@ -41,5 +41,5 @@ let filmsItems = filmsList.querySelectorAll('.promo__interactive-item');
 movieDB.movies.sort();
 
 [...filmsItems].forEach((item, i) => {
-  item.textContent = movieDB.movies[i];
+  item.textContent = `${i + 1}. ${movieDB.movies[i]}`;
 });
