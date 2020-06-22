@@ -27,10 +27,10 @@ const movieDB = {
 const advertisingBlock = document.querySelector('.promo__adv');
 const advertisingImages = advertisingBlock.getElementsByTagName('img');
 
-advertisingImages[0].remove();
-
 [...advertisingImages].forEach(item => {
   item.remove();
 });
 
-console.log(advertisingImages);
+document.querySelector('.promo__genre').textContent = 'Драма';
+
+document.querySelector('.promo__bg').style.backgroundImage = 'url(img/bg.jpg)';
