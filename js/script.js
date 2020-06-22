@@ -32,7 +32,7 @@ advertisingImages.forEach(item => {
 
 document.querySelector('.promo__genre').textContent = 'Драма';
 
-document.querySelector('.promo__bg').style.backgroundImage = 'url(img/bg.jpg)';
+document.querySelector('.promo__bg').style.backgroundImage = 'url("img/bg.jpg")';
 
 let filmsList = document.querySelector('.promo__interactive-list');
 let filmsItems = filmsList.querySelectorAll('.promo__interactive-item');
