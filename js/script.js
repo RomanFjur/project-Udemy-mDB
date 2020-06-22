@@ -24,10 +24,9 @@ const movieDB = {
     ]
 };
 
-const advertisingBlock = document.querySelector('.promo__adv');
-const advertisingImages = advertisingBlock.getElementsByTagName('img');
+const advertisingImages = document.querySelectorAll('.promo__adv img');
 
-[...advertisingImages].forEach(item => {
+advertisingImages.forEach(item => {
   item.remove();
 });
 
